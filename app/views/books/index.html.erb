@@ -9,6 +9,7 @@
 <h1>全投稿</h1>
 <% @books.each do |book| %>
   <%= book.id %>
-  <%= book.title %>
+  <%= link_to book.title,  book_path(book.id)  %>
   <%= book.body %>
+  <br>
 <% end %>

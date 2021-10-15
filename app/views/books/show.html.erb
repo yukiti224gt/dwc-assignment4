@@ -1,0 +1,4 @@
+<h2>Book detail</h2>
+<%= link_to @book.user.name, user_path(@book.user.id) %>
+<%= link_to @book.title, book_path(@book.id) %>
+<%= @book.body %>
