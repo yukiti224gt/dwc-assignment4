@@ -2,3 +2,6 @@
 <%= link_to @book.user.name, user_path(@book.user.id) %>
 <%= link_to @book.title, book_path(@book.id) %>
 <%= @book.body %>
+<% if current_user == @book.user %>
+    <%= link_to "Destroy", book_path(@book), method: :delete, data: { confirm: '本当に消しますか？' } %>
+<% end %>
