@@ -1,3 +1,5 @@
+<%= render './error_form', user: @book  %>
+
 <h1>画像投稿フォーム</h1>
 <%= form_with model: @book, local:true do |f| %>
   <h4>title:</h4>
@@ -6,6 +8,7 @@
   <%= f.text_area :body %>
   <%= f.submit '投稿' %>
 <% end %>
+
 <h1>全投稿</h1>
 <% @books.each do |book| %>
   <%= book.id %>
