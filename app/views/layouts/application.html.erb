@@ -18,7 +18,7 @@
         <%= link_to "logout", destroy_user_session_path, method: :delete %>
       <% else %>
         <%= link_to "Home",  root_path %>
-        <%= link_to "About",  root_path %>
+        <%= link_to "About",  home_about_path %>
         <%= link_to "Sign up", new_user_registration_path %>
         <%= link_to "Log in", new_user_session_path %>　     
       <% end %>
