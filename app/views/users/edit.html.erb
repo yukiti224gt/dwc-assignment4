@@ -1,6 +1,6 @@
 <%= render './error_form', user: @user  %>
 <h2>User info</h2>
-<%= form_with model:@user, lacal:true do |f| %>
+<%= form_with model:@user, local:true do |f| %>
   <div>
     <p>Name</p>
     <%= f.text_field :name, autofocus: true, placeholder:"名前"%>
