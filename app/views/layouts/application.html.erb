@@ -64,7 +64,9 @@
     </header>
     
     <% if flash[:notice] %>
-      <%= flash[:notice] %>
+      <div class="text-success">
+        <%= flash[:notice] %>
+      </div>
     <% end %>
     
     <%= yield %>

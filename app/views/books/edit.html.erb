@@ -1,7 +1,7 @@
-<%= render './error_form', user: @book %> 
 <div class="container">
   <div class="row">
     <div class="mx-auto col-md-6">
+      <%= render './error_form', user: @book %> 
       <h1>Editing Book</h1>
       <%= form_with model:@book, local:true do |f| %>
         <div class="form-group">
