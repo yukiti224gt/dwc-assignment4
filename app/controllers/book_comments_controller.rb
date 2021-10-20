@@ -1,14 +1,11 @@
 class BookCommentsController < ApplicationController
   def create
     book = Book.find(params[:book_id])
+    logger.debug(book.inspect)
     book_comment = current_user.book_comments.new(book_comment_params)
     book_comment.book_id = book.id
-    if book_comment.save
-      flash[:notice] = "save was done"
-      redirect_to books_path
-    else
-      redirect_to book_path(book.id)
-    end
+    book_comment.save
+    redirect_to books_path
   end
   
   def destroy
