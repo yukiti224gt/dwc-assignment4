@@ -33,7 +33,7 @@
               </li>
               <li class="nav-item list-unstyled">
                 <%= link_to destroy_user_session_path, method: :delete do %>
-                  <i class="fas fa-sign-out-alt text-light nav-link"> Log out</i>
+                  <i class="fas fa-sign-out-alt text-light nav-link"> log out</i>
                 <% end %>
               </li>
             <% else %>
@@ -49,12 +49,12 @@
               </li>
               <li class="nav-item list-unstyled">
                 <%= link_to  new_user_registration_path do %>
-                  <i class="fas fa-user-plus text-light nav-link"> Sign up</i> 
+                  <i class="fas fa-user-plus text-light nav-link"> sign up</i> 
                 <% end %>
               </li>
               <li class="nav-item list-unstyled">
                 <%= link_to new_user_session_path do %>
-                  <i class="fas fa-sign-in-alt text-light nav-link"> Log in</i>
+                  <i class="fas fa-sign-in-alt text-light nav-link"> login</i>
                 <% end %>
               </li>
             <% end %>
@@ -68,7 +68,7 @@
         <span class="text-success">
           <%= flash[:notice] %>
         </span>
-      <% end %>
+      <% end %>å
     </div>
     
     <%= yield %>
