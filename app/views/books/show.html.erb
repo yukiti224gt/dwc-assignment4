@@ -48,6 +48,7 @@
           <td></td>
         </tr>
       </table>
+      
       <% @book_comments.each do |book_comment| %>
         <div>
           <%= attachment_image_tag book_comment.user, :profile_image, :fill, 40, 40, fallback: "no_image.jpg", size: "40x40" %>
