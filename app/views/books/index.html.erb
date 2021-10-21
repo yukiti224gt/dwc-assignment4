@@ -30,7 +30,7 @@
               
               <% if book.favorited_by?(current_user) %>
                 <td>
-                  <%= link_to book_favorite_path(book,book.favorites), method: :delete do %>
+                  <%= link_to book_favorite_path(book,book.favorites), method: :delete, class:"text-danger" do %>
                     <i class="fas fa-heart"></i><%= book.favorites.count %>
                   <% end %>
                 </td>
