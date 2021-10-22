@@ -30,14 +30,14 @@
               
               <% if book.favorited_by?(current_user) %>
                 <td>
-                  <%= link_to book_favorite_path(book, current_user.favorites.find_by(book_id: book.id)), method: :delete, class:"text-danger" do %>
+                  <%= link_to book_favorites_path(book), method: :delete, class:"text-danger" do %>
                     
                     <i class="fas fa-heart"></i><%= book.favorites.count %>
                   <% end %>
                 </td>
               <% else %>
                 <td>
-                  <%= link_to book_favorites_path(book.id), method: :post do %>
+                  <%= link_to book_favorites_path(book), method: :post do %>
                     <i class="fas fa-heart"></i>️<%= book.favorites.count %>
                   <% end %>
                 </td>
